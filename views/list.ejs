@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard Customers</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='/css/list_customer.css'>
+        <script src="/send_url.js"></script>
+    <body>
+        <header>
+        <h1>List of Customers</h1>
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <th>Customer Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Amount</th>
+                    <th>View Account</th>
+                </tr>
+            <% customers.forEach((customer)=>{%>
+                <tr>
+                    <td><%= customer.Id%></td>
+                    <td><%= customer.Name%></td>
+                    <td><%= customer.Email%></td>
+                    <td><%= customer.Amount%></td>
+                    <td><a href='/transfer/<%= customer.Id%>'>Click Here</a></td>
+            </tr>
+            <%})%>
+            </table>
+            <a class='change' href='/transaction'>View Transactions</a>
+        </main>
+        
+    </body>
+</html>

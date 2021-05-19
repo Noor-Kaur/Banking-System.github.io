@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Details</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='/css/tran.css'>
+    </head>
+
+    <body>
+        <header>
+            <img src='/images/logo.png'>
+        </header>
+
+        <main>
+            <h1>Customer Details</h1>
+            <table>
+                <tr>
+                    <th>Customer Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th><span>Current Balance</span></th>
+                </tr>
+                <tr>
+                    <td><%= customer.Id%></td>
+                    <td><%= customer.Name%></td>
+                    <td><%= customer.Email%></td>
+                    <td><%= customer.Amount%></td>
+                </tr>
+            </table>
+        </main>
+
+        <form action='/update/<%= customer.Id%>' method='post'>
+            <h5>Customer Id</h5>
+            <input type='text' value='<%= customer.Id%>' readonly='readonly'>
+            <h5>Enter Customer's Id to Transfer Money</h5>
+            <input type='number' name='num'>
+            <h5>Amount</h5>
+            <input type='number' name='cash'>
+            
+            <input type='submit' value='transfer' class='btn'>
+        </form>
+
+    </body>
+</html>

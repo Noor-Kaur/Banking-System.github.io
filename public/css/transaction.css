@@ -1,0 +1,45 @@
+body{
+    text-align:center;
+    font-size:23px;
+    background-image: url('/images/image.jpg');
+    color: rgba(45, 45, 46, 0.651);
+}
+
+body h1{
+    margin: 0;
+    color: rgba(20, 20, 19, 0.582);
+}
+
+main{
+    margin:50px 200px;
+    padding:0 100px;
+}
+
+tr{
+    background-color:rgba(255, 255, 255, 0.904);
+}
+
+th ,td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    background-color:rgba(189, 185, 185, 0.363)
+}
+  
+  table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 10px 5px rgba(224, 224, 186, 0.623);
+  }
+
+  main a{
+      background-color: rgba(104, 136, 241, 0.575);
+      padding: 5px;
+      border-radius: 5px;
+      color:rgba(0, 0, 0, 0.664);
+    }
